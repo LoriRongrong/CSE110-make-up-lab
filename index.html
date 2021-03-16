@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>110 Lab 5</title>
+    <link rel="stylesheet" href="assets/styles/main.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <header></header>
+
+      <main>
+        <input id="first" type="text" />
+        <text>+</text>
+        <input id="second" type="text" />
+        <button onclick="add()">=</button>
+        <text id="ans">0</text>
+
+        <div>
+          <button onclick="logInput()">test console.log</button>
+          <button onclick="errorInput()">test console.error</button>
+          <button onclick="tableInput()">test console.table</button>
+          <button onclick="dirInput()">test console.dir</button>
+          <button onclick="dirxml()">test console.dixml</button>
+          <button onclick="groupInput()">test console.group</button>
+          <button onclick="groupEnd()">test console.groupEnd</button>
+          <button onclick="time()">test console.time</button>
+          <button onclick="timeEnd()">test console.timeEnd</button>
+          <button onclick="trace()">test console.trace</button>
+          <button onclick="triggerException()">test Try Catch</button>
+          <button onclick="customError()">test custom error</button>
+          <button onclick="boom()">global error</button>
+        </div>
+      </main>
+    </div>
+    <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+    <script>
+      window.TrackJS &&
+        TrackJS.install({
+          token: "4b6666ad82514c62850b1ea3fb93e37d",
+          // for more configuration options, see https://docs.trackjs.com
+        });
+        TrackJS.track('Testing TrackJS!');
+    </script>
+    <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+
+    <script src="assets/scripts/main.js"></script>
+  </body>
+</html>
